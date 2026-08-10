@@ -1,0 +1,7 @@
+﻿services:
+  plickersservice.api:
+    image: plickersservice.api
+    build:
+      context: .
+      dockerfile: src/PlickersService.API/Dockerfile
+

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8222A085-BF71-4186-BE7D-4E67E3704DC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A91E7C54-0C60-411B-8809-9680C2915383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlickersService.API", "src\PlickersService.API\PlickersService.API.csproj", "{A068DD2B-B60A-4FC4-923C-85A112FD46A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlickersService.Application", "src\PlickersService.Application\PlickersService.Application.csproj", "{7B8B33E5-554D-4048-A34F-69E90D0A9901}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlickersService.Infrastructure", "src\PlickersService.Infrastructure\PlickersService.Infrastructure.csproj", "{79814DE1-3155-41DD-9A43-17494B233C89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlickersService.Domain", "src\PlickersService.Domain\PlickersService.Domain.csproj", "{EEBE35F3-3C04-4555-91D1-5D2B56007A54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9EEE6EE1-9DDA-4880-BADE-A465A7D07DA8}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A068DD2B-B60A-4FC4-923C-85A112FD46A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A068DD2B-B60A-4FC4-923C-85A112FD46A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A068DD2B-B60A-4FC4-923C-85A112FD46A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A068DD2B-B60A-4FC4-923C-85A112FD46A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B8B33E5-554D-4048-A34F-69E90D0A9901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B8B33E5-554D-4048-A34F-69E90D0A9901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B8B33E5-554D-4048-A34F-69E90D0A9901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B8B33E5-554D-4048-A34F-69E90D0A9901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79814DE1-3155-41DD-9A43-17494B233C89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79814DE1-3155-41DD-9A43-17494B233C89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79814DE1-3155-41DD-9A43-17494B233C89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79814DE1-3155-41DD-9A43-17494B233C89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEBE35F3-3C04-4555-91D1-5D2B56007A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEBE35F3-3C04-4555-91D1-5D2B56007A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEBE35F3-3C04-4555-91D1-5D2B56007A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEBE35F3-3C04-4555-91D1-5D2B56007A54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A068DD2B-B60A-4FC4-923C-85A112FD46A6} = {8222A085-BF71-4186-BE7D-4E67E3704DC5}
+		{7B8B33E5-554D-4048-A34F-69E90D0A9901} = {8222A085-BF71-4186-BE7D-4E67E3704DC5}
+		{79814DE1-3155-41DD-9A43-17494B233C89} = {8222A085-BF71-4186-BE7D-4E67E3704DC5}
+		{EEBE35F3-3C04-4555-91D1-5D2B56007A54} = {8222A085-BF71-4186-BE7D-4E67E3704DC5}
+	EndGlobalSection
+EndGlobal
