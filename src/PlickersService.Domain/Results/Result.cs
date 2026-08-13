@@ -4,9 +4,9 @@ public class Result
 {
     public bool IsSuccess { get; private set; }
     public bool IsFailure => !IsSuccess;
-    public Error? Error { get; private set; }
+    public Error Error { get; private set; }
 
-    protected Result(bool isSuccess, Error? error)
+    protected Result(bool isSuccess, Error error)
     {
         IsSuccess = isSuccess;
         Error = error;
@@ -14,7 +14,7 @@ public class Result
 
     public static Result Success()
     {
-        return new Result(true, null);
+        return new Result(true, null!);
     }
 
     public static Result Failure(Error error)

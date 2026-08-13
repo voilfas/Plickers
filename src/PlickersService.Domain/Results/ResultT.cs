@@ -2,10 +2,10 @@
 
 public class Result<T> : Result
 {
-    public T? Value { get; private set; }
+    public T Value { get; private set; }
     
     private Result(T value) 
-        : base(isSuccess: true, error: null)
+        : base(isSuccess: true, error: null!)
     {
         Value = value;
     }
@@ -13,7 +13,7 @@ public class Result<T> : Result
     private Result(Error error) 
         : base(isSuccess: false ,error: error)
     {
-        Value = default;
+        Value = default!;
     }
 
     public static Result<T> Success(T value)

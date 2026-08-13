@@ -48,15 +48,14 @@ public class Pack : BaseEntity
         return Result.Success();
     }
 
-    public Result DeleteCard(Card? card)
+    public Result DeleteCard(Guid? cardId)
     {
-        if (card is null)
+        var cardToRemove = _cards.FirstOrDefault(c => c.Id == cardId);
+        
+        if (cardToRemove is null)
             return Result.Failure(DomainErrors.Pack.EmptyCard);
         
-        if (_cards.Any(c => c.Id == card.Id))
-            return Result.Failure(DomainErrors.Pack.CardExists);
-        
-        _cards.Remove(card);
+        _cards.Remove(cardToRemove);
         
         return Result.Success();
     }
