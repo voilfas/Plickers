@@ -57,7 +57,11 @@ public class Card : BaseEntity
         return Result<Card>.Success(new Card(cardName, question, picturePath, answers));
     }
 
-    public Result UpdateCardDetails(string newName, string newQuestion, string? newPicturePath, List<Answer> newAnswers)
+    public Result UpdateCardDetails(
+        string newName,
+        string newQuestion,
+        string? newPicturePath,
+        List<Answer> newAnswers)
     {
         var validationResult = Create(newName, newQuestion, newPicturePath, newAnswers);
         if (validationResult.IsFailure)

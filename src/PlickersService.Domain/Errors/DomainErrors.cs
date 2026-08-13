@@ -71,6 +71,12 @@ public static class DomainErrors
             new Error(
                 "Pack.CardExists",
                 "This card already exists");
+        
+        public static readonly Error CardNotExists =
+            new Error(
+                "Pack.CardNotExists",
+                "This card doesn't exists in pack");
+        
     }
 
     public static class User
